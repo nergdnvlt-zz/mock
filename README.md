@@ -1,3 +1,6 @@
+# To trigger alarm:
+https://machine-mock.herokuapp.com/api/v1/devices/1
+
 # README
 
 This README would normally document whatever steps are necessary to get the
