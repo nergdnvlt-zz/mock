@@ -21,7 +21,7 @@ class MachineService
 
   def interval_request
     conn.post do |req|
-      req.url "#{@device_id}"
+      req.url "#{@device_id}/locations"
       req.body = {"lat": "#{@gps.lat}", "long": "#{@gps.long}"}.to_json
     end
   end
