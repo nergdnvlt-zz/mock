@@ -16,12 +16,11 @@ class MachineService
   end
 
   def conn
-    Faraday.new('https://machine-ltd.herokuapp.com/api/v1/devices/')
+    Faraday.new("https://machine-ltd.herokuapp.com/api/v1/devices/#{@device_id}/locations")
   end
 
   def interval_request
     conn.post do |req|
-      req.url "#{@device_id}/locations"
       req.body = {"lat": "#{@gps.lat}", "long": "#{@gps.long}"}.to_json
     end
   end
