@@ -1,7 +1,7 @@
 ### To trigger alarm:
 https://machine-mock.herokuapp.com/api/v1/devices/1
 
---- 
+---
 
 # Mock Hardware Application
 
